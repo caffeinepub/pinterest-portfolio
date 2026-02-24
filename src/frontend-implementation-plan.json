@@ -1,0 +1,23 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add Amazon referral link for hair/skin care product",
+  "requirements": [
+    {
+      "id": "REQ-15",
+      "summary": "Wire the generated product thumbnail image into the BoardCard component so the new Amazon referral link displays correctly in the portfolio showcase",
+      "acceptanceCriteria": [
+        "The generated image is saved to frontend/public/assets/generated",
+        "The image filename follows the pattern used for other referral link thumbnails",
+        "The BoardCard component correctly displays the generated thumbnail for this referral link"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Portfolio.tsx",
+          "operation": "modify",
+          "description": "Verify that the Portfolio component correctly renders the BoardCard with the generated thumbnail at frontend/public/assets/generated/amazon-product.dim_400x300.png when the backend returns the new referral link entry with thumbnailPath set to '/assets/generated/amazon-product.dim_400x300.png'. Ensure the existing useReferralLinks hook and BoardCard mapping logic handle the new entry without modification."
+        }
+      ]
+    }
+  ]
+}

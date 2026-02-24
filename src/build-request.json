@@ -1,0 +1,58 @@
+{
+  "kind": "build_request",
+  "title": "Add Amazon referral link for hair/skin care product",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-14",
+      "text": "Add a new referral link entry to the backend with the Amazon affiliate URL 'https://amzn.to/3OzRf1C', categorized under either hair care or skin care, with an appropriate product title and description",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "https://amzn.to/3OzRf1C"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The referral link is stored in the backend with the exact URL 'https://amzn.to/3OzRf1C'",
+        "The link is assigned to either the hair care or skin care category",
+        "The link includes a descriptive title and description appropriate for the product",
+        "The link appears in the portfolio showcase section on the frontend",
+        "Clicking the card increments the click counter and redirects to the Amazon URL"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Generate a product thumbnail image for the new Amazon referral link that visually represents the hair care or skin care product",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The generated image is saved to frontend/public/assets/generated",
+        "The image filename follows the pattern used for other referral link thumbnails",
+        "The BoardCard component correctly displays the generated thumbnail for this referral link"
+      ]
+    }
+  ],
+  "constraints": [
+    "Preserve the existing referral link data structure and schema",
+    "Maintain the current click tracking functionality",
+    "Do not modify the frontend/src/hooks or frontend/src/components/ui directories"
+  ],
+  "nonGoals": [
+    "Modifying existing referral links for bedroom, living room, or DIY categories",
+    "Changing the overall website design or layout",
+    "Adding authentication or user management features"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Hair care or skin care product thumbnail image with warm, elegant styling matching the Pinterest aesthetic (amazon-product.dim_400x300.png)"
+    ],
+    "edits": []
+  }
+}

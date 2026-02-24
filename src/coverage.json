@@ -1,0 +1,47 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-24T02:31:10.228Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-14",
+        "summary": "Add a new referral link entry to the backend with the Amazon affiliate URL 'https://amzn.to/3OzRf1C', categorized under either hair care or skin care, with an appropriate product title and description",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-15",
+        "summary": "Generate a product thumbnail image for the new Amazon referral link that visually represents the hair care or skin care product",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Portfolio.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Portfolio.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "backend/migration.mo",
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/amazon-product.dim_400x300.png",
+    "frontend/src/components/Portfolio.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

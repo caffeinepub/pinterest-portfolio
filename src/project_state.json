@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Referral-based website for Pinterest account business where visitors are redirected through affiliate/referral links",
+  "architectural_notes": [
+    "Website uses referral/affiliate link model for monetization"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Hair care or skin care product thumbnail image with warm, elegant styling matching the Pinterest aesthetic (amazon-product.dim_400x300.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-homepage-that-showcases-the-pinterest-account-business-with-a-hero-section-business-description-and-call-to-action-to-view-the-portfolio",
+      "title": "Create a homepage that showcases the Pinterest account business with a hero section, business description, and call-to-action to view the portfolio",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-portfolio-gallery-section-that-displays-pinterest-board-previews-with-images-titles-and-descriptions",
+      "title": "Build a portfolio gallery section that displays Pinterest board previews with images, titles, and descriptions",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-services-section-that-outlines-what-the-pinterest-account-business-offers-to-clients",
+      "title": "Create a services section that outlines what the Pinterest account business offers to clients",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-contact-form-that-allows-potential-clients-to-reach-out-capturing-name-email-and-message",
+      "title": "Implement a contact form that allows potential clients to reach out, capturing name, email, and message",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-testimonials-or-social-proof-section-to-build-credibility-for-the-pinterest-account-business",
+      "title": "Add a testimonials or social proof section to build credibility for the Pinterest account business",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-navigation-menu-that-allows-users-to-easily-move-between-sections-of-the-website",
+      "title": "Create a navigation menu that allows users to easily move between sections of the website",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-the-website-with-a-creative-visual-theme-that-reflects-pinterest-s-aesthetic-with-warm-earthy-tones-elegant-typography-and-a-clean-image-focused-layout-that-emphasizes-visual-storytelling",
+      "title": "Design the website with a creative visual theme that reflects Pinterest's aesthetic with warm, earthy tones, elegant typography, and a clean, image-focused layout that emphasizes visual storytelling",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-portfolio-gallery-section-with-a-referral-links-showcase-that-displays-clickable-cards-each-representing-a-pinterest-board-or-product-that-redirects-users-through-tracked-referral-links",
+      "title": "Replace the current portfolio gallery section with a referral links showcase that displays clickable cards, each representing a Pinterest board or product that redirects users through tracked referral links",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-click-tracking-functionality-that-increments-a-counter-when-users-click-on-referral-links-and-redirects-them-to-the-target-url",
+      "title": "Implement click tracking functionality that increments a counter when users click on referral links and redirects them to the target URL",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-hero-section-call-to-action-to-emphasize-browsing-curated-pinterest-recommendations-instead-of-viewing-a-portfolio",
+      "title": "Update the hero section call-to-action to emphasize browsing curated Pinterest recommendations instead of viewing a portfolio",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-services-section-to-describe-the-value-proposition-of-curated-referral-links-and-recommendations-instead-of-pinterest-account-management-services",
+      "title": "Update the services section to describe the value proposition of curated referral links and recommendations instead of Pinterest account management services",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-a-product-thumbnail-image-for-the-new-amazon-referral-link-that-visually-represents-the-hair-care-or-skin-care-product",
+      "title": "Generate a product thumbnail image for the new Amazon referral link that visually represents the hair care or skin care product",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-2",
+      "summary": "Create a backend data model to store referral links with fields including link ID, title, description, category, target URL, thumbnail image path, and click count",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Seed the backend with initial referral link data including at least three sample Pinterest referral links with titles, descriptions, categories, and target URLs",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Add a new referral link entry to the backend with the Amazon affiliate URL 'https://amzn.to/3OzRf1C', categorized under either hair care or skin care, with an appropriate product title and description",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Pinterest Portfolio",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
