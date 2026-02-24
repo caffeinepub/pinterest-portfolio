@@ -1,13 +1,13 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 7,
+  "projectStateVersion": 9,
   "summary": "Referral-based website for Pinterest account business where visitors are redirected through affiliate/referral links",
   "architectural_notes": [
-    "Website uses referral/affiliate link model for monetization"
+    "Website uses referral/affiliate link model for monetization",
+    "Pinterest Tag (conversion tracking pixel) integration with tag ID 2614024734220"
   ],
   "known_issues": [],
   "isFixRequest": false,
-  "imageRequirements": "## Required Images\n- Hair care or skin care product thumbnail image with warm, elegant styling matching the Pinterest aesthetic (amazon-product.dim_400x300.png)",
   "existing_features": [
     {
       "id": "feature-create-a-homepage-that-showcases-the-pinterest-account-business-with-a-hero-section-business-description-and-call-to-action-to-view-the-portfolio",
@@ -104,6 +104,22 @@
         "REQ-15"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-add-the-pinterest-tag-tracking-script-to-the-html-document-head-loading-the-pinterest-conversion-tracking-library-from-https-s-pinimg-com-ct-core-js-and-initializing-it-with-tag-id-2614024734220",
+      "title": "Add the Pinterest Tag tracking script to the HTML document head, loading the Pinterest conversion tracking library from https://s.pinimg.com/ct/core.js and initializing it with tag ID '2614024734220'",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-configure-the-pinterest-tag-to-track-page-views-automatically-when-the-site-loads",
+      "title": "Configure the Pinterest Tag to track page views automatically when the site loads",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -129,6 +145,12 @@
       "reqIds": [
         "REQ-14"
       ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Integrate Pinterest Tag tracking code into the website to enable conversion tracking and analytics",
+      "reqIds": [],
       "status": "pending"
     }
   ],

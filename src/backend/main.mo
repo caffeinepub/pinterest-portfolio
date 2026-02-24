@@ -2,9 +2,9 @@ import Text "mo:core/Text";
 import Nat "mo:core/Nat";
 import List "mo:core/List";
 import Runtime "mo:core/Runtime";
-import Migration "migration";
 
-(with migration = Migration.run)
+
+
 actor {
   public type ReferralLink = {
     id : Nat;

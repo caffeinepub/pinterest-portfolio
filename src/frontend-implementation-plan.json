@@ -1,21 +1,37 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Add Amazon referral link for hair/skin care product",
+  "title": "Integrate Pinterest Tag tracking code for conversion analytics",
   "requirements": [
     {
-      "id": "REQ-15",
-      "summary": "Wire the generated product thumbnail image into the BoardCard component so the new Amazon referral link displays correctly in the portfolio showcase",
+      "id": "REQ-16",
+      "summary": "Add Pinterest Tag tracking script to HTML document head with tag ID initialization and noscript fallback",
       "acceptanceCriteria": [
-        "The generated image is saved to frontend/public/assets/generated",
-        "The image filename follows the pattern used for other referral link thumbnails",
-        "The BoardCard component correctly displays the generated thumbnail for this referral link"
+        "Pinterest Tag script is loaded asynchronously in the document head",
+        "pintrk function is initialized with tag ID '2614024734220'",
+        "Page view tracking is triggered on initial load with pintrk('page')",
+        "Noscript fallback img tag is included for non-JavaScript environments"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Portfolio.tsx",
+          "path": "frontend/index.html",
           "operation": "modify",
-          "description": "Verify that the Portfolio component correctly renders the BoardCard with the generated thumbnail at frontend/public/assets/generated/amazon-product.dim_400x300.png when the backend returns the new referral link entry with thumbnailPath set to '/assets/generated/amazon-product.dim_400x300.png'. Ensure the existing useReferralLinks hook and BoardCard mapping logic handle the new entry without modification."
+          "description": "Add Pinterest Tag tracking script to the <head> section. Insert the async script that loads https://s.pinimg.com/ct/core.js, initialize the pintrk function with window._pintrk queue pattern, call pintrk('load', '2614024734220', {em: '<user_email_address>'}), and add the noscript fallback <img> tag pointing to https://ct.pinterest.com/v3/?event=init&tid=2614024734220&noscript=1 within a <noscript> tag in the body. Ensure the script executes before the closing </head> tag to enable tracking on initial page load."
+        }
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "summary": "Configure Pinterest Tag to automatically track page views on site load",
+      "acceptanceCriteria": [
+        "pintrk('page') is called after Pinterest Tag initialization",
+        "Page view events are sent to Pinterest analytics dashboard"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Add pintrk('page') call immediately after the pintrk('load', '2614024734220', {em: '<user_email_address>'}) initialization within the Pinterest Tag script block in the <head> section. This ensures automatic page view tracking fires on every page load and sends data to the Pinterest analytics dashboard."
         }
       ]
     }

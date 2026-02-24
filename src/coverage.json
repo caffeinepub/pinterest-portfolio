@@ -1,44 +1,45 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-24T02:31:10.228Z",
+  "generatedAt": "2026-02-24T02:48:17.616Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
     "total": 2,
-    "implemented": 1,
+    "implemented": 2,
     "items": [
       {
-        "id": "REQ-14",
-        "summary": "Add a new referral link entry to the backend with the Amazon affiliate URL 'https://amzn.to/3OzRf1C', categorized under either hair care or skin care, with an appropriate product title and description",
-        "status": "unknown",
-        "plannedFiles": [],
-        "matchedFiles": []
-      },
-      {
-        "id": "REQ-15",
-        "summary": "Generate a product thumbnail image for the new Amazon referral link that visually represents the hair care or skin care product",
+        "id": "REQ-16",
+        "summary": "Add the Pinterest Tag tracking script to the HTML document head, loading the Pinterest conversion tracking library from https://s.pinimg.com/ct/core.js and initializing it with tag ID '2614024734220'",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/components/Portfolio.tsx"
+          "frontend/index.html"
         ],
         "matchedFiles": [
-          "frontend/src/components/Portfolio.tsx"
+          "frontend/index.html"
+        ]
+      },
+      {
+        "id": "REQ-17",
+        "summary": "Configure the Pinterest Tag to track page views automatically when the site loads",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/index.html"
+        ],
+        "matchedFiles": [
+          "frontend/index.html"
         ]
       }
     ]
   },
   "changedFiles": [
-    "backend/main.mo",
-    "backend/migration.mo",
     "build-request.json",
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/public/assets/generated/amazon-product.dim_400x300.png",
-    "frontend/src/components/Portfolio.tsx",
+    "frontend/index.html",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

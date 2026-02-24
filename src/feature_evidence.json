@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-generate-a-product-thumbnail-image-for-the-new-amazon-referral-link-that-visually-represents-the-hair-care-or-skin-care-product",
-      "featureTitle": "Generate a product thumbnail image for the new Amazon referral link that visually represents the hair care or skin care product",
+      "featureId": "feature-add-the-pinterest-tag-tracking-script-to-the-html-document-head-loading-the-pinterest-conversion-tracking-library-from-https-s-pinimg-com-ct-core-js-and-initializing-it-with-tag-id-2614024734220",
+      "featureTitle": "Add the Pinterest Tag tracking script to the HTML document head, loading the Pinterest conversion tracking library from https://s.pinimg.com/ct/core.js and initializing it with tag ID '2614024734220'",
       "files": [
-        "frontend/src/components/Portfolio.tsx"
+        "frontend/index.html"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -15,7 +15,25 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-15"
+        "REQ-16"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-configure-the-pinterest-tag-to-track-page-views-automatically-when-the-site-loads",
+      "featureTitle": "Configure the Pinterest Tag to track page views automatically when the site loads",
+      "files": [
+        "frontend/index.html"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-17"
       ],
       "confidence": "high"
     }

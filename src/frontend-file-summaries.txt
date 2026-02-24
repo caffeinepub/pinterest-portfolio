@@ -14,5 +14,6 @@
   "frontend/src/components/ContactForm.tsx": "Contact form with name, email, and message fields that submits to backend and displays success/error states.",
   "frontend/src/components/Footer.tsx": "Footer with brand information, quick links, social media icons, and attribution to caffeine.ai with UTM tracking.",
   "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching referral links and tracking clicks with backend integration, including useReferralLinks for data fetching and useReferralTracking mutation for click tracking.",
-  "frontend/src/hooks/useContactForm.ts": "Custom hook managing contact form submission using React Query mutation and backend actor."
+  "frontend/src/hooks/useContactForm.ts": "Custom hook managing contact form submission using React Query mutation and backend actor.",
+  "frontend/index.html": "HTML entry point with Pinterest Tag tracking script in head for analytics initialization and page view tracking, plus noscript fallback image for non-JavaScript environments."
 }
